@@ -48,6 +48,10 @@ qa-portfolio-lab/
 │   └── user-api-testing.postman_collection.json
 ├── screenshots/
 │   ├── README.md
+│   ├── login-page.png
+│   ├── valid-login.png
+│   ├── empty-email-validation.png
+│   ├── invalid-email-format.png
 │   └── bug-example.png
 └── docs/
     └── testing-summary.md

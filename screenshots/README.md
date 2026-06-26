@@ -1,6 +1,22 @@
 # Screenshots
 
-This folder is used to store testing evidence, bug screenshots, and UI validation images.
+This folder contains testing evidence screenshots from the demo login page.
+
+## Screenshot List
+
+| File Name | Description |
+|---|---|
+| `login-page.png` | Default login page before testing |
+| `valid-login.png` | Evidence for successful login with valid credentials |
+| `empty-email-validation.png` | Evidence for empty email validation |
+| `invalid-email-format.png` | Evidence for invalid email format validation |
+| `bug-example.png` | Evidence for `BUG-LOGIN-001`, showing incorrect password validation behavior |
+
+## Notes
+
+Screenshots are used as testing evidence in bug reports, test cases, and testing summary documents.
+
+Do not include sensitive user data, real passwords, private tokens, or customer information in screenshots.
 
 ## Example Files
 
