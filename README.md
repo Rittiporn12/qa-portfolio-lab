@@ -63,6 +63,18 @@ This repository includes a simple demo login page located in `demo-login/index.h
 
 The demo page is used as a sample application for manual testing practice. It intentionally contains a password validation issue so that the testing documents can demonstrate how to write test cases, bug reports, and testing summaries.
 
+## Demo Test Data
+
+Use the following test data to test the demo login page.
+
+| Scenario | Email | Password | Expected Result |
+|---|---|---|---|
+| Valid login | user@example.com | Password123 | Login successful |
+| Empty email | empty | Password123 | Email is required |
+| Invalid email format | userexample.com | Password123 | Invalid email format |
+| Empty password | user@example.com | empty | Password is required |
+| Invalid password | user@example.com | wrongpassword | Invalid email or password |
+
 ## Sample Testing Scenario
 
 This project uses a sample Login feature as the main testing scenario.
@@ -84,6 +96,18 @@ The login feature includes the following test conditions:
 | 5 | 4 | 1 | 0 |
 
 One failed test case was found in password field validation and documented in the bug report.
+
+## Testing Evidence
+
+Screenshots are stored in the `screenshots` folder and used as evidence for test execution and bug reporting.
+
+| Screenshot | Description |
+|---|---|
+| `login-page.png` | Default login page before testing |
+| `valid-login.png` | Successful login with valid credentials |
+| `empty-email-validation.png` | Validation message when email is empty |
+| `invalid-email-format.png` | Validation message when email format is invalid |
+| `bug-example.png` | Evidence for incorrect password validation behavior |
 
 ## Testing Skills Demonstrated
 
@@ -133,11 +157,14 @@ The `docs` folder contains the final testing summary report.
 
 ## How to Use This Repository
 
-1. Open the test case document in `test-cases/login-test-case.md`
-2. Review the failed test case `TC-LOGIN-004`
-3. Open the bug report in `bug-reports/login-validation-bug.md`
-4. Import the Postman collection from the `postman` folder
-5. Review the final testing summary in `docs/testing-summary.md`
+1. Open the live demo login page from the Quick Links section
+2. Use the demo test data to execute each login scenario
+3. Review the test case document in `test-cases/login-test-case.md`
+4. Review the failed test case `TC-LOGIN-004`
+5. Open the bug report in `bug-reports/login-validation-bug.md`
+6. Check the screenshot evidence in the `screenshots` folder
+7. Import the Postman collection from the `postman` folder
+8. Review the final testing summary in `docs/testing-summary.md`
 
 ## Author
 
