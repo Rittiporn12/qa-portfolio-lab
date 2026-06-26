@@ -64,8 +64,8 @@ To verify that users can log in successfully with valid credentials and that the
 | Preconditions | The user is on the login page |
 | Test Data | Email: user@example.com / Password: empty |
 | Steps | 1. Open the login page<br>2. Enter a valid email<br>3. Leave the password field empty<br>4. Click the Login button |
-| Expected Result | The system should show "Password is required" |
-| Actual Result | The system shows "Invalid email or password" instead of "Password is required" |
+| Expected Result | The system should show "Password is required." |
+| Actual Result | The system shows "Invalid email or password" instead of "Password is required." |
 | Status | Fail |
 
 ---

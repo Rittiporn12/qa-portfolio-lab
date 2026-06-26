@@ -37,7 +37,7 @@ Most test cases passed successfully. However, one issue was found in the passwor
 
 | Test Case ID | Scenario | Reason |
 |---|---|---|
-| TC-LOGIN-004 | Login with empty password field | No validation message is displayed |
+| TC-LOGIN-004 | Login with empty password field | The system displays a generic error message instead of "Password is required." |
 
 ## Retest Notes
 

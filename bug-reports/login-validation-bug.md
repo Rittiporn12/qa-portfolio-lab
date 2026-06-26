@@ -6,11 +6,11 @@ BUG-LOGIN-001
 
 ## Title
 
-Login form allows submission when the password field is empty
+Login form displays incorrect error message when the password field is empty
 
 ## Summary
 
-The login form does not display the correct validation message when the password field is left empty. Instead of showing "Password is required.", the system shows a generic error message: "Invalid email or password."
+When the password field is left empty, the login form displays a generic error message instead of the required field validation message. Instead of showing "Password is required.", the system shows a generic error message: "Invalid email or password."
 
 ## Severity
 
@@ -22,10 +22,10 @@ High
 
 ## Environment
 
-* OS: Windows 10
-* Browser: Google Chrome
-* Device: Desktop
-* Test Type: Manual Testing
+- OS: Windows 10
+- Browser: Google Chrome
+- Device: Desktop
+- Test Type: Manual Testing
 
 ## Preconditions
 

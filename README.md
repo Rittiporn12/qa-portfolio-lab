@@ -72,7 +72,7 @@ Use the following test data to test the demo login page.
 | Valid login | user@example.com | Password123 | Login successful |
 | Empty email | empty | Password123 | Email is required |
 | Invalid email format | userexample.com | Password123 | Invalid email format |
-| Empty password | user@example.com | empty | Password is required |
+| Empty password | user@example.com | empty | Password is required. |
 | Invalid password | user@example.com | wrongpassword | Invalid email or password |
 
 ## Sample Testing Scenario
@@ -150,6 +150,8 @@ The `test-plan` folder contains the testing plan for the login feature.
 ### Postman Collection
 
 The `postman` folder contains a sample Postman collection for API testing.
+
+Note: The Postman collection uses sample API endpoints to demonstrate API test case design and request structure. The endpoint `https://example.com/api/login` is not a real working API.
 
 ### Testing Summary
 
