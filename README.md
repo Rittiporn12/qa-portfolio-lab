@@ -93,7 +93,7 @@ One failed test case was found in password field validation and documented in th
 
 ## Quick Links
 
-- [Demo Login Page](./demo-login/index.html)
+- [Live Demo Login Page](https://rittiporn12.github.io/qa-portfolio-lab/demo-login/)
 - [Test Cases](./test-cases/login-test-case.md)
 - [Bug Report](./bug-reports/login-validation-bug.md)
 - [Test Plan](./test-plan/test-plan.md)
