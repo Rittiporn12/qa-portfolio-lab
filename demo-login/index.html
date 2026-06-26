@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Demo - QA Portfolio Lab</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .login-card {
+        width: 380px;
+        background: #ffffff;
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 28px;
+        color: #1f2937;
+      }
+
+      .subtitle {
+        margin: 0 0 24px;
+        color: #6b7280;
+        font-size: 14px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #374151;
+        font-size: 14px;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 14px;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        font-size: 14px;
+        outline: none;
+      }
+
+      input:focus {
+        border-color: #2563eb;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 10px;
+        background: #2563eb;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1d4ed8;
+      }
+
+      .message {
+        margin-top: 16px;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 14px;
+        display: none;
+      }
+
+      .error {
+        background: #fee2e2;
+        color: #991b1b;
+        display: block;
+      }
+
+      .success {
+        background: #dcfce7;
+        color: #166534;
+        display: block;
+      }
+
+      .bug-note {
+        margin-top: 18px;
+        font-size: 12px;
+        color: #6b7280;
+        line-height: 1.5;
+      }
+
+      .bug-note strong {
+        color: #374151;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="login-card">
+      <h1>Login</h1>
+      <p class="subtitle">Demo login page for QA testing practice</p>
+
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter your email" />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="message" class="message"></div>
+
+      <p class="bug-note">
+        <strong>Testing note:</strong> This demo intentionally contains a
+        validation bug. When the password field is empty, the system does not
+        show "Password is required."
+      </p>
+    </main>
+
+    <script>
+      const loginForm = document.getElementById("loginForm");
+      const message = document.getElementById("message");
+
+      loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        message.className = "message";
+        message.textContent = "";
+
+        if (email === "") {
+          message.textContent = "Email is required.";
+          message.classList.add("error");
+          return;
+        }
+
+        if (!email.includes("@")) {
+          message.textContent = "Invalid email format.";
+          message.classList.add("error");
+          return;
+        }
+
+        /*
+                Intentional Bug:
+                Password empty validation is missing.
+                Expected: Show "Password is required."
+                Actual: The form continues without showing password validation.
+            */
+
+        if (email === "user@example.com" && password === "Password123") {
+          message.textContent = "Login successful.";
+          message.classList.add("success");
+          return;
+        }
+
+        message.textContent = "Invalid email or password.";
+        message.classList.add("error");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+{
+    "info": {
+        "name": "User API Testing Collection",
+        "description": "A sample Postman collection for testing login API behavior.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Login - Valid Credentials",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"Password123\"\n}"
+                },
+                "url": {
+                    "raw": "https://example.com/api/login",
+                    "protocol": "https",
+                    "host": [
+                        "example",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Login - Invalid Password",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"wrongpassword\"\n}"
+                },
+                "url": {
+                    "raw": "https://example.com/api/login",
+                    "protocol": "https",
+                    "host": [
+                        "example",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Login - Empty Password",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"\"\n}"
+                },
+                "url": {
+                    "raw": "https://example.com/api/login",
+                    "protocol": "https",
+                    "host": [
+                        "example",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Login - Empty Email",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"\",\n  \"password\": \"Password123\"\n}"
+                },
+                "url": {
+                    "raw": "https://example.com/api/login",
+                    "protocol": "https",
+                    "host": [
+                        "example",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Login - Invalid Email Format",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"email\": \"userexample.com\",\n  \"password\": \"Password123\"\n}"
+                },
+                "url": {
+                    "raw": "https://example.com/api/login",
+                    "protocol": "https",
+                    "host": [
+                        "example",
+                        "com"
+                    ],
+                    "path": [
+                        "api",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
