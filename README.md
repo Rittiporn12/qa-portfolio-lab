@@ -7,17 +7,12 @@
 <img src="https://img.shields.io/badge/QA-Manual%20Testing-2563eb?style=for-the-badge&labelColor=020617" alt="Manual Testing Badge" />
 <img src="https://img.shields.io/badge/Postman-API%20Testing-f97316?style=for-the-badge&labelColor=020617" alt="Postman Badge" />
 <img src="https://img.shields.io/badge/Bug%20Report-Jira%20Style-475569?style=for-the-badge&labelColor=020617" alt="Bug Report Badge" />
-<img src="https://img.shields.io/badge/Documentation-Markdown-64748b?style=for-the-badge&labelColor=020617" alt="Markdown Badge" />
 
 <br />
 <br />
 
 <a href="https://rittiporn12.github.io/qa-portfolio-lab/demo-login/">
   <img src="https://img.shields.io/badge/LIVE%20DEMO-Login%20Testing%20Page-1e3a8a?style=for-the-badge&labelColor=020617&color=2563eb" alt="Live Demo" />
-</a>
-
-<a href="https://github.com/Rittiporn12/qa-portfolio-lab">
-  <img src="https://img.shields.io/badge/GITHUB-Repository-334155?style=for-the-badge&labelColor=020617&color=475569" alt="GitHub Repository" />
 </a>
 
 <br />
